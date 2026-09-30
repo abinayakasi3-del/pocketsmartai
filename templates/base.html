@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PocketSmart AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6f8;--ink:#14202b;--mute:#5d6b78;--green:#0e6b5c;--gold:#f2b632;--line:#d9e1e6;--red:#b3261e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 'Bricolage Grotesque',system-ui,sans-serif}
+a{color:var(--green)}nav{display:flex;gap:18px;align-items:center;padding:14px 5vw;border-bottom:1px solid var(--line);background:#fff;flex-wrap:wrap}
+nav b{font-size:20px;margin-right:auto;color:var(--ink);text-decoration:none}nav a{text-decoration:none;font-weight:600}
+main{max-width:1050px;margin:0 auto;padding:32px 5vw 64px}h1{font-size:clamp(30px,5vw,50px);line-height:1.08;margin:0 0 12px;font-weight:800}
+.muted{color:var(--mute)}.err{color:var(--red);font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}
+.tile{background:#fff;border:1px solid var(--line);border-left:6px solid var(--green);border-radius:6px;padding:20px;text-decoration:none;color:var(--ink)}
+.tile:nth-child(2){border-left-color:var(--gold)}.tile:nth-child(3){border-left-color:var(--ink)}.tile h3{margin:0 0 6px}
+.cols{display:grid;grid-template-columns:minmax(260px,340px) 1fr;gap:28px}@media(max-width:760px){.cols{grid-template-columns:1fr}}
+form label{display:block;font-weight:600;margin:14px 0 4px}input,select{width:100%;padding:10px;border:1px solid var(--line);border-radius:6px;font:inherit;background:#fff}
+button{margin-top:18px;background:var(--green);color:#fff;border:0;border-radius:6px;padding:12px 20px;font:inherit;font-weight:700;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.item{background:#fff;border:1px solid var(--line);border-radius:6px;padding:14px 16px;margin-bottom:10px;display:flex;justify-content:space-between;gap:16px}
+.price{font-weight:800;white-space:nowrap}.bar{height:10px;background:var(--line);border-radius:5px;overflow:hidden;margin:8px 0 16px}.bar i{display:block;height:100%;background:var(--green)}
+.bar.over i{background:var(--red)}.card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:24px;max-width:420px}
+</style></head><body>
+<nav><b>PocketSmart AI</b><a href="/">Planners</a>
+{% if user %}<a href="/history">History</a><a href="/logout">Log out ({{ user }})</a>{% else %}<a href="/login">Log in</a><a href="/register">Register</a>{% endif %}</nav>
+<main>{% block body %}{% endblock %}</main></body></html>

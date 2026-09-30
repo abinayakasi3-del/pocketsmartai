@@ -1,0 +1,338 @@
+{
+ "users": {
+  "abinaya": {
+   "salt": "ece07982fd6ed989",
+   "hash": "4c558caec06f7561e629f582163bc353a6901758dd2415d2ea217ffd4fce73d6"
+  },
+  "aparna": {
+   "salt": "d5a99ff3e042fc0c",
+   "hash": "2f8f60e25386eabf8596ec0d69a80868c5e4116114f8cba47c2aaff860acbcff"
+  }
+ },
+ "history": {
+  "abinaya": [
+   {
+    "time": "30 Sep 2026, 16:27",
+    "kind": "jewelry",
+    "budget": 600000,
+    "result": {
+     "summary": "Showing default suggestions split across your budget.",
+     "items": [
+      {
+       "name": "Statement necklace set",
+       "category": "jewelry",
+       "platform": "Amazon",
+       "price": 300000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Statement+necklace+set"
+      },
+      {
+       "name": "Earrings",
+       "category": "jewelry",
+       "platform": "Flipkart",
+       "price": 180000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aflipkart.com+Earrings"
+      },
+      {
+       "name": "Bangles",
+       "category": "jewelry",
+       "platform": "Amazon",
+       "price": 120000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Bangles"
+      }
+     ],
+     "budget": 600000,
+     "total": 600000,
+     "over": false,
+     "fallback": true
+    }
+   },
+   {
+    "time": "30 Sep 2026, 16:26",
+    "kind": "party",
+    "budget": 30000,
+    "result": {
+     "summary": "Showing default suggestions split across your budget.",
+     "items": [
+      {
+       "name": "Catering",
+       "category": "party",
+       "platform": "Zomato",
+       "price": 15000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Azomato.com+Catering"
+      },
+      {
+       "name": "Decoration kit",
+       "category": "party",
+       "platform": "Amazon",
+       "price": 9000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Decoration+kit"
+      },
+      {
+       "name": "Entertainment / games",
+       "category": "party",
+       "platform": "Flipkart",
+       "price": 6000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aflipkart.com+Entertainment+%2F+games"
+      }
+     ],
+     "budget": 30000,
+     "total": 30000,
+     "over": false,
+     "fallback": true
+    }
+   },
+   {
+    "time": "30 Sep 2026, 14:35",
+    "kind": "jewelry",
+    "budget": 500000,
+    "result": {
+     "summary": "Showing default suggestions split across your budget.",
+     "items": [
+      {
+       "name": "Statement necklace set",
+       "category": "jewelry",
+       "platform": "Amazon",
+       "price": 250000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Statement+necklace+set"
+      },
+      {
+       "name": "Earrings",
+       "category": "jewelry",
+       "platform": "Flipkart",
+       "price": 150000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aflipkart.com+Earrings"
+      },
+      {
+       "name": "Bangles",
+       "category": "jewelry",
+       "platform": "Amazon",
+       "price": 100000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Bangles"
+      }
+     ],
+     "budget": 500000,
+     "total": 500000,
+     "over": false,
+     "fallback": true
+    }
+   },
+   {
+    "time": "30 Sep 2026, 14:30",
+    "kind": "party",
+    "budget": 400000,
+    "result": {
+     "summary": "Showing default suggestions split across your budget.",
+     "items": [
+      {
+       "name": "Catering",
+       "category": "party",
+       "platform": "Zomato",
+       "price": 200000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Azomato.com+Catering"
+      },
+      {
+       "name": "Decoration kit",
+       "category": "party",
+       "platform": "Amazon",
+       "price": 120000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Decoration+kit"
+      },
+      {
+       "name": "Entertainment / games",
+       "category": "party",
+       "platform": "Flipkart",
+       "price": 80000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aflipkart.com+Entertainment+%2F+games"
+      }
+     ],
+     "budget": 400000,
+     "total": 400000,
+     "over": false,
+     "fallback": true
+    }
+   },
+   {
+    "time": "30 Sep 2026, 14:29",
+    "kind": "home",
+    "budget": 200000,
+    "result": {
+     "summary": "Showing default suggestions split across your budget.",
+     "items": [
+      {
+       "name": "Ceiling fan",
+       "category": "home",
+       "platform": "Amazon",
+       "price": 50000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Ceiling+fan"
+      },
+      {
+       "name": "LED light fittings",
+       "category": "home",
+       "platform": "IKEA",
+       "price": 30000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aikea.com%2Fin+LED+light+fittings"
+      },
+      {
+       "name": "Dining table",
+       "category": "home",
+       "platform": "IKEA",
+       "price": 80000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aikea.com%2Fin+Dining+table"
+      },
+      {
+       "name": "Wall decor set",
+       "category": "home",
+       "platform": "Flipkart",
+       "price": 40000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aflipkart.com+Wall+decor+set"
+      }
+     ],
+     "budget": 200000,
+     "total": 200000,
+     "over": false,
+     "fallback": true
+    }
+   }
+  ],
+  "aparna": [
+   {
+    "time": "30 Sep 2026, 14:48",
+    "kind": "jewelry",
+    "budget": 600000,
+    "result": {
+     "summary": "Showing default suggestions split across your budget.",
+     "items": [
+      {
+       "name": "Statement necklace set",
+       "category": "jewelry",
+       "platform": "Amazon",
+       "price": 300000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Statement+necklace+set"
+      },
+      {
+       "name": "Earrings",
+       "category": "jewelry",
+       "platform": "Flipkart",
+       "price": 180000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aflipkart.com+Earrings"
+      },
+      {
+       "name": "Bangles",
+       "category": "jewelry",
+       "platform": "Amazon",
+       "price": 120000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Bangles"
+      }
+     ],
+     "budget": 600000,
+     "total": 600000,
+     "over": false,
+     "fallback": true
+    }
+   },
+   {
+    "time": "30 Sep 2026, 14:47",
+    "kind": "party",
+    "budget": 50000,
+    "result": {
+     "summary": "Showing default suggestions split across your budget.",
+     "items": [
+      {
+       "name": "Catering",
+       "category": "party",
+       "platform": "Zomato",
+       "price": 25000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Azomato.com+Catering"
+      },
+      {
+       "name": "Decoration kit",
+       "category": "party",
+       "platform": "Amazon",
+       "price": 15000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Decoration+kit"
+      },
+      {
+       "name": "Entertainment / games",
+       "category": "party",
+       "platform": "Flipkart",
+       "price": 10000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aflipkart.com+Entertainment+%2F+games"
+      }
+     ],
+     "budget": 50000,
+     "total": 50000,
+     "over": false,
+     "fallback": true
+    }
+   },
+   {
+    "time": "30 Sep 2026, 14:46",
+    "kind": "home",
+    "budget": 30000,
+    "result": {
+     "summary": "Showing default suggestions split across your budget.",
+     "items": [
+      {
+       "name": "Ceiling fan",
+       "category": "home",
+       "platform": "Amazon",
+       "price": 7500,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aamazon.in+Ceiling+fan"
+      },
+      {
+       "name": "LED light fittings",
+       "category": "home",
+       "platform": "IKEA",
+       "price": 4500,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aikea.com%2Fin+LED+light+fittings"
+      },
+      {
+       "name": "Dining table",
+       "category": "home",
+       "platform": "IKEA",
+       "price": 12000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aikea.com%2Fin+Dining+table"
+      },
+      {
+       "name": "Wall decor set",
+       "category": "home",
+       "platform": "Flipkart",
+       "price": 6000,
+       "why": "Default suggestion (AI unavailable).",
+       "link": "https://www.google.com/search?q=site%3Aflipkart.com+Wall+decor+set"
+      }
+     ],
+     "budget": 30000,
+     "total": 30000,
+     "over": false,
+     "fallback": true
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}{% block body %}
+<h1>{{ p.title }}</h1>
+<div class="cols">
+<form id="f" enctype="multipart/form-data">
+{% for name, label, type, opts in p.fields %}<label for="{{ name }}">{{ label }}</label>
+{% if type == 'select' %}<select id="{{ name }}" name="{{ name }}">{% for o in opts %}<option>{{ o }}</option>{% endfor %}</select>
+{% elif type == 'file' %}<input id="{{ name }}" name="{{ name }}" type="file" accept="image/*">
+{% else %}<input id="{{ name }}" name="{{ name }}" type="{{ type }}" {% if type=='number' %}min="0"{% endif %} {% if name=='budget' %}required{% endif %}>{% endif %}
+{% endfor %}<button>Get recommendations</button></form>
+<section id="out"><p class="muted">Your recommendations will appear here.</p></section></div>
+<script>
+const f=document.getElementById('f'),out=document.getElementById('out');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+f.addEventListener('submit',async e=>{
+  e.preventDefault(); out.innerHTML='<p class="muted">Planning your budget…</p>';
+  try{
+    const r=await fetch('/generate-{{ kind }}',{method:'POST',body:new FormData(f)});
+    const d=await r.json();
+    if(!r.ok){out.innerHTML=`<p class="err">${esc(d.error||'Something went wrong. Try again.')}</p>`;return}
+    const pct=Math.min(100,Math.round(d.total/d.budget*100));
+    out.innerHTML=`<p>${esc(d.summary)}</p>${d.fallback?'<p class="muted">AI was unavailable, so these are default suggestions.</p>':''}
+    <b>₹${d.total.toLocaleString('en-IN')} of ₹${d.budget.toLocaleString('en-IN')}</b>
+    <div class="bar ${d.over?'over':''}"><i style="width:${pct}%"></i></div>`+
+    d.items.map(i=>`<div class="item"><div><b>${esc(i.name)}</b><br><span class="muted">${esc(i.platform)} · ${esc(i.why)}</span><br>
+    <a href="${esc(i.link)}" target="_blank" rel="noopener">Find on ${esc(i.platform)}</a></div><span class="price">₹${i.price.toLocaleString('en-IN')}</span></div>`).join('');
+  }catch(err){out.innerHTML='<p class="err">Could not reach the server.</p>'}
+});
+</script>{% endblock %}

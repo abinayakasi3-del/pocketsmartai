@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block body %}
+<h1>Spend the budget you have on what fits.</h1>
+<p class="muted">Tell PocketSmart AI your budget and needs. It suggests items from Amazon, Flipkart, IKEA, Swiggy, Zomato and OYO that add up to no more than you can spend.</p>
+<div class="tiles">
+{% for k, p in planners.items() %}<a class="tile" href="/planner/{{ k }}"><h3>{{ p.title }}</h3>
+<span class="muted">{% if k=='home' %}Furniture, lights and decor room by room.{% elif k=='party' %}Catering, decor and fun split by guest count.{% else %}Pieces matched to your occasion and outfit.{% endif %}</span></a>{% endfor %}
+</div>{% endblock %}

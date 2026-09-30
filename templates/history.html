@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block body %}
+<h1>Your past plans</h1>
+{% for h in items %}<h3>{{ h.kind|capitalize }} plan · ₹{{ h.budget }} <span class="muted" style="font-weight:400">{{ h.time }}</span></h3>
+<p class="muted">{{ h.result.summary }}</p>
+{% for i in h.result['items'] %}<div class="item"><div><b>{{ i.name }}</b><br><span class="muted">{{ i.platform }}</span> · <a href="{{ i.link }}" target="_blank" rel="noopener">Open</a></div><span class="price">₹{{ i.price }}</span></div>{% endfor %}
+{% else %}<p class="muted">No plans yet. <a href="/">Start with a planner</a>.</p>{% endfor %}
+{% endblock %}
